@@ -15,7 +15,7 @@ MYSQL_CONFIG = {
 }
 
 MONGO_CONFIG = {
-    "uri": "mongodb://ich_editor:verystrongpassword@mongo.itcareerhub.de/?readPreference=primary&ssl=false&authMechanism=DEFAULT&authSource=ich_edit",
-    "db_name": "ich_edit",
-    "collection": "final_project_101025_Oleg"
+    "uri": os.getenv("MONGO_URI"),
+    "db_name": os.getenv("MONGO_DB"),
+    "collection": os.getenv("MONGO_COLLECTION")
 }
